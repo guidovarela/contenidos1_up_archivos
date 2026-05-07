@@ -1,0 +1,103 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#mainContent{
+    /* Modelo de caja */
+    width: 90%;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+    }
+    .header{
+        /* flex-container   */
+        background: red;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2%;
+        
+        }
+
+        h1{
+            margin:0 ;
+        }
+        /* flex-container */
+        .noticias{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        /* flex-items */
+        .noticias .noti{
+            width: 30%;
+            /* border: 1px solid black; */
+            margin-top:2%;
+            padding: 5%;
+            background: rgb(82, 227, 101);
+        }
+        .noti .noti-img{
+            overflow: hidden;
+            height: 200px;
+            }
+            .noti .noti-img img{
+                transform: translateY(-200px) translateX(-200px);
+            }
+
+            /* forms */
+
+#formComents{
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid;
+    border-radius: 0.5em;
+    padding: 20px;
+    }
+    #formComents div{
+        margin-bottom: 0.7em;
+    }
+    #formComents input,#formComents select,#formComents textarea{
+        width: 100%;
+        /* font-size: 1.2em; */
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid grey;
+    }
+    #formComents textarea{
+        resize: none;
+    }
+    /* boton envio */
+    #formComents input[type="submit"]{
+        width: 60%;
+        background: tomato;
+        color: white;
+        cursor: pointer;
+        margin-left: 25%;
+    }
+    #formComents input[type="submit"]:hover{
+        background: rgb(236, 147, 131);
+    }
+
+    /* validacion */
+    #formComents input:valid{
+        border-color: rgb(26, 99, 26);
+    }
+    #formComents input:invalid{
+        border-color: rgb(223, 45, 18);
+    }
+
+
+        .footer{
+            margin-top: 2%;
+            /* border-top:2px black solid; */
+            padding: 2%;
+            text-align: center;
+
+            }

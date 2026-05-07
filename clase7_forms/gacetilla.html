@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <div id="mainContent">
+        
+        <header class="header">
+            <div class="logo">
+                <h1>
+                    Formularios
+                </h1>
+            </div>
+
+            <div class="search">
+                <form action="" method="post">
+                    <input type="search" name="" id="" placeholder="🔍">
+                </form>
+            </div>
+
+            <nav>
+                <a href="">IG</a>
+                <a href="">Tk</a>
+                <a href="">X</a>
+            </nav>
+
+        </header>
+
+        <section id="contacto">
+
+            <div>
+                <h2>Envianos tus comentarios</h2>
+            </div>
+
+            <form id="formComents" action="" method="post">
+<!-- 
+    Tip Militar:
+    - Todos los campos deben tener name=""
+    - No se puede enviar un form vacio -> required
+    -->
+            <div>
+                <label>
+                    Email
+                    <input type="email" name="email" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{3}$">
+                </label>
+            </div>
+            <div>
+                <label for="nombreApellido">            Nombre y Apellido</label>
+                <input type="text" name="nombreApellido" required>
+            </div>
+            
+            <div>
+                <label>
+                Telefono
+                <input type="tel" name="telefono" id="">
+                </label>
+            </div>
+
+            <div>
+                Motivo de la consulta:
+                <select name="motivo" id="">
+                    <option value="">Seleccionar...</option>
+                    <option>
+                        Reclamos por el servicio
+                    </option>
+                    <option>
+                        Consulta sobre pagos
+                    </option>
+                    <option>Reseñas</option>
+                </select>
+            </div>
+
+            <div>
+                <span>Como evaluarías tu experiencia en el sitio ?</span>
+                <input type="range" name="test-experiencia" min="1" max="10" step="1" >
+            </div>
+
+            <div>
+                <label>
+                    Dejanos un comentario (opcional)
+                    <textarea name="comentario"></textarea>
+                </label>
+            </div>
+
+            <div>
+                <input type="submit" value="Envianos tus comentarios">
+            </div>
+
+            <!-- 
+                Ejercicio:
+                Email / 
+                Nombre y Apellido / telefono / 
+                Motivo de consulta / Likert (experiencia) / Comentario /
+                Enviar
+            -->
+
+            </form>
+            
+        </section>
+
+        <footer class="footer">
+            <p>
+                copyright 2026 - Derechos reservados
+            </p>
+        </footer>
+
+
+    </div>
+
+
+</body>
+</html>
