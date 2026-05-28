@@ -1,0 +1,12 @@
+.bg1{
+    background: #00aeac;
+}
+.bg2{
+    background: #069291;
+}
+.slider{
+    height: 250px;
+}
+.bg3{
+    background: linear-gradient(rgb(48, 21, 172),rgb(76, 68, 235));
+}
